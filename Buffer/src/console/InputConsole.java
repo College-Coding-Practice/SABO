@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package console;
+
+import java.io.Console;
+
+/**
+ *
+ * @author edi
+ */
+public class InputConsole {
+    public static void main(String[] args) {
+    
+        String nama;
+        int usia;
+        
+        // membuat objek console
+        Console con = System.console();
+        
+        // mengisi variabel nama dan usia dengan console
+        System.out.print("Inputkan nama: ");
+        nama = con.readLine();
+        System.out.print("Inputkan usia: ");
+        usia = Integer.parseInt(con.readLine());
+        
+        // mengampilkan isi variabel nama dan usia
+        System.out.println("Nama kamu adalah: " + nama);
+        System.out.println("Saat ini berusia " + usia + " tahun");
+    }
+}
